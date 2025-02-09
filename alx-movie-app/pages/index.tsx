@@ -1,4 +1,3 @@
-// pages/index.tsx
 import Button from "@/components/commons/Button";
 import { useRouter } from "next/router";
 
@@ -10,7 +9,8 @@ const Home: React.FC = () => {
       <section
         className="h-screen bg-cover bg-center"
         style={{
-          backgroundImage: 'url("https://themebeyond.com/html/movflx/img/bg/breadcrumb_bg.jpg")',
+          backgroundImage:
+            'url("https://themebeyond.com/html/movflx/img/bg/breadcrumb_bg.jpg")',
         }}
       >
         <div className="bg-black bg-opacity-50 h-full flex flex-col justify-center items-center text-center">
@@ -24,7 +24,7 @@ const Home: React.FC = () => {
           </p>
           <Button
             title="Browse Movies"
-            action={() => router.push("/movies")}
+            action={() => router.push("/movies", undefined, { shallow: false })}
           />
         </div>
       </section>

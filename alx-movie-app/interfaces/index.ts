@@ -1,4 +1,3 @@
-// interfaces/index.ts
 import { ReactNode } from "react";
 
 export interface ComponentProps {
